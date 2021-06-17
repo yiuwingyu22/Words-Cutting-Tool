@@ -1,0 +1,102 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4
+load:0x3fff0034,len:6944
+ho 0 tail 12 room 4
+load:0x40078000,len:14336
+load:0x40080400,len:3672
+entry 0x40080678
+[0;32mI (30) boot: ESP-IDF v4.3-dev-2586-g526f68239 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time 14:45:46[0m
+[0;32mI (30) boot: chip revision: 1[0m
+[0;32mI (35) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ced4h (118484) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0002cefc vaddr=3ffbdb60 size=0311ch ( 12572) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=787b4h (493492) map[0m
+[0;32mI (335) esp_image: segment 3: paddr=000a87dc vaddr=3ffc0c7c size=00a08h (  2568) load[0m
+[0;32mI (336) esp_image: segment 4: paddr=000a91ec vaddr=40080000 size=00404h (  1028) load[0m
+[0;32mI (342) esp_image: segment 5: paddr=000a95f8 vaddr=40080404 size=15fd8h ( 90072) load[0m
+[0;32mI (398) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (398) boot: Disabling RNG early entropy source...[0m
+[0;32mI (409) cpu_start: Pro cpu up.[0m
+[0;32mI (409) cpu_start: Starting app cpu, entry point is 0x400811b8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (424) cpu_start: Pro cpu start user code[0m
+[0;32mI (424) cpu_start: cpu freq: 160000000[0m
+[0;32mI (424) cpu_start: Application information:[0m
+[0;32mI (428) cpu_start: Project name:     gatt_client_demo[0m
+[0;32mI (434) cpu_start: App version:      1[0m
+[0;32mI (438) cpu_start: Compile time:     Jan 21 2021 14:45:42[0m
+[0;32mI (444) cpu_start: ELF file SHA256:  9eca2b80830a03a1...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v4.3-dev-2586-g526f68239[0m
+[0;32mI (457) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (464) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFC5F08 len 0001A0F8 (104 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (495) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (501) heap_init: At 400963DC len 00009C24 (39 KiB): IRAM[0m
+[0;32mI (509) spi_flash: detected chip: generic[0m
+[0;32mI (512) spi_flash: flash io: dio[0m
+[0;33mW (516) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (531) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (576) system_api: Base MAC address is not set[0m
+[0;32mI (576) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (576) BTDM_INIT: BT controller compile version [b62cb38][0m
+[0;32mI (586) phy_init: phy_version 4660,0162888,Dec 23 2020[0m
+[0;32mI (1036) GATTC_DEMO: 1 REG_EVT[0m
+[0;32mI (1046) GATTC_DEMO: scan start success[0m
+[0;32mI (1076) GATTC_DEMO: ce 6e 45 98 2c c4 [0m
+[0;32mI (1076) GATTC_DEMO: searched Adv Data Len 20, Scan Response Len 18[0m
+[0;32mI (1076) GATTC_DEMO: searched Device Name Len 15[0m
+[0;32mI (1086) GATTC_DEMO: Nordic_UART_ADC[0m
+[0;32mI (1086) GATTC_DEMO: 
+[0m
+[0;32mI (1096) GATTC_DEMO: searched device Nordic_UART_ADC
+[0m
+[0;32mI (1096) GATTC_DEMO: connect to the remote device.[0m
+[0;32mI (1106) GATTC_DEMO: stop scan successfully[0m
+[0;32mI (1206) GATTC_DEMO: 2.1 ESP_GATTC_CONNECT_EVT conn_id 0, if 3[0m
+[0;32mI (1206) GATTC_DEMO: 2.2 REMOTE BDA:[0m
+[0;32mI (1206) GATTC_DEMO: ce 6e 45 98 2c c4 [0m
+[0;32mI (1216) GATTC_DEMO: 3 open success[0m
+[0;32mI (2146) GATTC_DEMO: 4 discover service complete conn_id[0m
+[0;32mI (2146) GATTC_DEMO: len of UUID128 set by remote filter: 16[0m
+[0;32mI (2146) GATTC_DEMO: UUID128 set by remote filter: 9e,ca,dc,24,e,e5,a9,e0,93,f3,a3,b5,1,0,40,6e[0m
+[0;32mI (2156) GATTC_DEMO: 6.1 SEARCH RES: conn_id = 0 is primary service 1[0m
+[0;32mI (2166) GATTC_DEMO: 6.2 start handle 11 end handle 65535 current handle value 11[0m
+[0;32mI (2176) GATTC_DEMO: len of UUID128discovered by the even: 16[0m
+[0;32mI (2176) GATTC_DEMO: UUID128 discovered by the event: 9e,ca,dc,24,e,e5,a9,e0,93,f3,a3,b5,1,0,40,6e[0m
+[0;32mI (2186) GATTC_DEMO: service found[0m
+[0;32mI (2196) GATTC_DEMO: UUID128: 9e,ca,dc,24,e,e5,a9,e0,93,f3,a3,b5,1,0,40,6e[0m
+[0;32mI (2196) GATTC_DEMO: 7.1 Get service information from remote device[0m
+[0;32mI (2206) GATTC_DEMO: 7.2 ESP_GATTC_SEARCH_CMPL_EVT[0m
+[0;32mI (2216) GATTC_DEMO: ESP_GATTC_REG_FOR_NOTIFY_EVT[0m
+[0;32mI (2236) GATTC_DEMO: 5 ESP_GATTC_CFG_MTU_EVT, Status 0, MTU 247, conn_id 0[0m
+[0;32mI (2276) GATTC_DEMO: write descr success [0m
+[0;32mI (2306) GATTC_DEMO: write char success [0m
+[0;32mI (6236) GATTC_DEMO: <ADC> 5, 1023, 1023, 1023, 1023, 1023 </ADC>[0m
+[0;32mI (7226) GATTC_DEMO: update connection params status = 16, min_int = 800, max_int = 1200,conn_int = 12,latency = 0, timeout = 600[0m
+[0;32mI (7906) GATTC_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 1200,latency = 0, timeout = 400[0m
+[0;33mW (14896) BT_APPL: bta_gattc_conn_cback() - cif=3 connected=0 conn_id=3 reason=0x0008[0m
+[0;32mI (14906) GATTC_DEMO: ESP_GATTC_DISCONNECT_EVT, reason = 8[0m
+Executing action: monitor
+Running idf_monitor in directory /Users/ricky/esp/esp-idf-master_2021_1/examples/bluetooth/bluedroid/ble/gatt_client
+Executing "/Users/ricky/.espressif/python_env/idf4.3_py3.7_env/bin/python /Users/ricky/esp/esp-idf/tools/idf_monitor.py -p /dev/tty.SLAB_USBtoUART -b 115200 --toolchain-prefix xtensa-esp32-elf- /Users/ricky/esp/esp-idf-master_2021_1/examples/bluetooth/bluedroid/ble/gatt_client/build/gatt_client_demo.elf -m '/Users/ricky/.espressif/python_env/idf4.3_py3.7_env/bin/python' '/Users/ricky/esp/esp-idf/tools/idf.py' '-p' '/dev/tty.SLAB_USBtoUART'"...
